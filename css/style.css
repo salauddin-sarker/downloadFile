@@ -1,0 +1,64 @@
+/*=========global css=========*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*=========main css=========*/
+body{
+    align-items: center;
+    background: #4285f4;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 25px 15px;
+    width: 500px;
+}
+header h1{
+    font-size: 27px;
+    font-weight: 500;
+}
+header p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+form{
+    margin: 20px 0 27px;
+}
+form input{
+    border: 1px solid #b3b2b2;
+    border-radius: 5px;
+    font-size: 19px;
+    height: 60px;
+    outline: none;
+    padding: 0 17px;
+    width: 100%;
+}
+form button{
+    background: #4285f4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    opacity: 0.7;
+    pointer-events: none;
+    padding: 15px 0;
+    width: 100%;
+}
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
